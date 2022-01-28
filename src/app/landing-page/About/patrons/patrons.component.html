@@ -1,0 +1,44 @@
+<section class="container">
+  <div class="container py-2">
+    <div class="position-relative border-radius-xl overflow-hidden shadow-lg mb-7">
+    <div class="h1 text-center text-dark" id="pageHeaderTitle">PATRONS</div>
+    <div class="logo-slider">
+      <div class="logo-slide-track">
+        <div class="slide mb-7" *ngFor="let i of patrons">
+          <img
+            src="api/{{ i.image }}"
+            [style.height.px]="imageHeight"
+            [style.width.px]="imageWidth"
+            [style.margin.px]="imageMargin"
+            alt=""
+          />
+          
+        </div>
+      
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class=" py-0">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-6">
+        <h4 class="mb-1">Thank you for your support!</h4>
+        <p class="lead mb-0">Wanna Join Our Team ?</p>
+      </div>
+      <div
+        class="col-lg-6 mt-lg-0 mt-4 d-lg-flex align-items-center justify-content-end"
+      >
+        <a
+        href="https://ictkerala.zohorecruit.com/jobs/Careers"
+          target="_blank"
+          class="btn btn-twitter mb-lg-0 mb-2 me-2"
+        >
+          <i class="far fa-smile-beam me-1"></i> Careers
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+</section>

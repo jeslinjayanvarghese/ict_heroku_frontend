@@ -1,0 +1,15 @@
+<section class="container">
+<div class="container py-2 mt-5">
+	<div class="position-relative border-radius-xl overflow-hidden shadow-lg mb-2">
+    <div class="h1 text-center text-dark" id="pageHeaderTitle">KNOWLEDGE PARTNERS</div>
+<div class="logo-slider">
+	<div class="logo-slide-track mb-3" >
+		<div class="slide mb-7" *ngFor="let i of knowledge">
+			<img src="api/{{ i.image }}" [style.height.px] ='imageHeight' [style.width.px] ='imageWidth'
+            [style.margin.px] ='imageMargin' alt="" />
+		</div>
+	</div>
+</div>
+</div>
+</div>
+</section>
